@@ -1,0 +1,55 @@
+name: snapshot
+
+# Los entornos de claude.ai no tienen salida a APIs de mercado, pero si a github.com.
+# Este workflow corre el motor donde SI hay internet y deja el resultado donde Claude
+# puede leerlo. Ese es todo el truco.
+
+on:
+  schedule:
+    # Cada 15 minutos. GitHub puede retrasar los cron en horas punta; para marcos de
+    # 1h y 4h eso es irrelevante.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generar snapshots
+        run: |
+          set -euo pipefail
+          mkdir -p snapshots
+          for par in ETH-USDT BTC-USDT SOL-USDT; do
+            nombre="${par//-/}"
+            echo "-> $par"
+            python get_market_snapshot.py \
+              --inst-id "$par" \
+              --out-file "snapshots/latest-${nombre}.json" \
+              --json-only > /dev/null
+          done
+
+      - name: Publicar si hay cambios
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots
+          if git diff --staged --quiet; then
+            echo "sin cambios"
+          else
+            git commit -m "snapshot $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
