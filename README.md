@@ -1,6 +1,6 @@
 # market-snapshots
 
-Snapshots de mercado calculados cada 15 minutos y publicados aqui.
+Snapshots de mercado calculados periodicamente y publicados aqui.
 
 **Este repo es publico a proposito y solo contiene datos publicos de mercado.** No hay nada
 personal: ni operaciones, ni planes de entrada, ni stops, ni la checklist de decision. Todo
@@ -31,9 +31,15 @@ Activos: ETH-USDT, BTC-USDT, SOL-USDT.
 
 ## Frescura de los datos
 
-Cada JSON trae `generadoUtc`. **Antes de usarlo hay que mirar ese campo.** Si el snapshot
-tiene mas de ~45 minutos, la tarea programada puede estar caida y los numeros ya no
-representan el mercado actual.
+Cada JSON trae `generadoUtc`. **Antes de usarlo hay que mirar ese campo.**
+
+El cron pide una ejecucion cada 15 minutos, pero **GitHub no la sirve a ese ritmo**. Medido
+sobre 20 ejecuciones reales: sale aproximadamente **una por hora**, con huecos ocasionales
+de varias horas. Planifica con esa cifra, no con la del cron.
+
+- Hasta 90 minutos: normal.
+- De 90 minutos a 4 horas: sirve para Diario y 4h; el 1h puede haber cambiado.
+- Mas de 4 horas: la tarea esta caida. Los numeros no representan el mercado.
 
 Los indicadores se calculan sobre **velas cerradas**; la vela viva se ignora a proposito.
 `precioActual` es el precio en vivo del momento de la ejecucion, solo como referencia.
