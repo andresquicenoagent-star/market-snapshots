@@ -452,6 +452,49 @@ def timeframe_report(candles, label, range_lookback=30, vp_lookback=120):
     estrechando = ((not isnan(sep_ahora)) and (not isnan(sep_hace5))
                    and (sep_ahora < sep_hace5))
 
+    # --- Patrones de salida, mecanizados -----------------------------------
+    # Se calculan aqui a proposito. Una regla que depende del juicio se aplica
+    # distinto cada vez: el 2026-08-22 dos entornos leyeron el mismo snapshot y
+    # uno declaro AREA NO OPERABLE donde no tocaba.
+    atr_now = adx_r["atr"][i]
+    highs = sw["lastSwingHighs"]
+
+    def _cerca(a, b, mult):
+        """¿Estan a y b a menos de `mult` ATR uno del otro?"""
+        if isnan(atr_now) or atr_now <= 0:
+            return False
+        return abs(a - b) <= mult * atr_now
+
+    # 3.1 cond 1: el precio toca el maximo anterior, o hay doble/triple techo.
+    techo_tocado = pos >= 85 or (len(highs) >= 1 and _cerca(last_c, max(highs), 0.5))
+    doble_techo = any(_cerca(highs[a], highs[b], 0.5)
+                      for a in range(len(highs))
+                      for b in range(a + 1, len(highs)))
+    ano_c1 = bool(techo_tocado or doble_techo)
+    # 3.1 cond 2: el lomo de momentum es del tamano del anterior (o mayor).
+    ano_c2 = bool(mom["signoTramo"] == 1 and mom["picoVsPrevioPct"] is not None
+                  and mom["picoVsPrevioPct"] >= 80)
+    # 3.1 cond 3: la pendiente del momentum ya es negativa.
+    ano_c3 = bool((mom["pendiente3"] is not None and mom["pendiente3"] < 0)
+                  or mom["girando"])
+    # 3.1 cond 4: venimos precedidos de un lateral.
+    ano_c4 = bool(cruces >= 3 or ((not isnan(adx_now)) and adx_now < 20))
+    # Las CUATRO. Si falta una, no es area no operable.
+    area_no_operable = bool(ano_c1 and ano_c2 and ano_c3 and ano_c4)
+
+    # 3.3 Fallo en superar el maximo anterior: el ultimo techo queda por debajo
+    # del previo (maximo decreciente), fue un intento real y no un desplome
+    # —por eso el limite de 2 ATR— y el momentum sigue con pendiente negativa.
+    fallo_max = False
+    fallo_dist = None
+    if len(highs) >= 2:
+        ult, prev = highs[-1], highs[-2]
+        if (not isnan(atr_now)) and atr_now > 0:
+            fallo_dist = _r((prev - ult) / atr_now)
+        fallo_max = bool(ult < prev and _cerca(ult, prev, 2.0)
+                         and mom["pendiente3"] is not None
+                         and mom["pendiente3"] < 0)
+
     def pend5():
         if isnan(ema55[i]) or isnan(ema55[j5]):
             return NAN
@@ -518,6 +561,13 @@ def timeframe_report(candles, label, range_lookback=30, vp_lookback=120):
         ("valueAreaBajo", vp["val"] if vp else None),
         ("swingHighs", sw["lastSwingHighs"]),
         ("swingLows", sw["lastSwingLows"]),
+        ("areaNoOperableCond1TechoTocado", ano_c1),
+        ("areaNoOperableCond2LomoIgualOMayor", ano_c2),
+        ("areaNoOperableCond3PendienteNegativa", ano_c3),
+        ("areaNoOperableCond4PrecedidoLateral", ano_c4),
+        ("areaNoOperable", area_no_operable),
+        ("falloEnMaximoAnterior", fallo_max),
+        ("falloEnMaximoDistanciaAtr", fallo_dist),
         ("velaVivaAbierta", live_open),
     ])
 
