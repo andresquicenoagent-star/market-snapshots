@@ -1,9 +1,9 @@
 {
   "activo": "SOL-USDT",
-  "generadoUtc": "2026-08-23 05:06:18 UTC",
-  "generadoLocal": "2026-08-23 05:06:18",
+  "generadoUtc": "2026-08-23 05:40:25 UTC",
+  "generadoLocal": "2026-08-23 05:40:25",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 92.6,
+  "precioActual": 92.62,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -94,6 +94,71 @@
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
       "falloEnMaximoDistanciaAtr": 0.13,
+      "zigzagUmbralAtr": 3.0,
+      "zigzagUmbralPrecio": 11.94,
+      "zigzagPivotes": [
+        {
+          "tipo": "L",
+          "precio": 76.7,
+          "barrasAtras": 142,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 98.38,
+          "barrasAtras": 103,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 60.11,
+          "barrasAtras": 77,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 83.98,
+          "barrasAtras": 49,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 70.58,
+          "barrasAtras": 21,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 102.74,
+          "barrasAtras": 0,
+          "enCurso": true
+        }
+      ],
+      "elliottEstructura": "no-compatible",
+      "elliottRegla1Onda2NoRompeOrigen": false,
+      "elliottRegla2Onda3NoEsLaMasCorta": true,
+      "elliottRegla3Onda4NoSolapaOnda1": false,
+      "elliottFalloDeQuinta": false,
+      "elliottLecturaProvisional": true,
+      "elliottOndasPct": [
+        28.27,
+        49.9,
+        31.12,
+        17.47,
+        41.93
+      ],
+      "canalLineaBase02": null,
+      "canalLineaBase02Rota": null,
+      "correccionTipo": "zigzag",
+      "correccionRetrocesoBPct": 56.14,
+      "fiboUltimoTramo": {
+        "desde": 70.58,
+        "hasta": 102.74,
+        "r382": 90.45,
+        "r50": 86.66,
+        "r618": 82.87,
+        "r786": 77.46
+      },
       "velaVivaAbierta": true
     },
     "4h": {
@@ -185,6 +250,71 @@
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
       "falloEnMaximoDistanciaAtr": -3.22,
+      "zigzagUmbralAtr": 3.0,
+      "zigzagUmbralPrecio": 8.68,
+      "zigzagPivotes": [
+        {
+          "tipo": "H",
+          "precio": 77.86,
+          "barrasAtras": 79,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 74.63,
+          "barrasAtras": 69,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 77.35,
+          "barrasAtras": 63,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 74.02,
+          "barrasAtras": 37,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 102.74,
+          "barrasAtras": 5,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 91.33,
+          "barrasAtras": 4,
+          "enCurso": true
+        }
+      ],
+      "elliottEstructura": "no-compatible",
+      "elliottRegla1Onda2NoRompeOrigen": true,
+      "elliottRegla2Onda3NoEsLaMasCorta": true,
+      "elliottRegla3Onda4NoSolapaOnda1": false,
+      "elliottFalloDeQuinta": true,
+      "elliottLecturaProvisional": true,
+      "elliottOndasPct": [
+        4.15,
+        3.49,
+        4.28,
+        36.89,
+        14.65
+      ],
+      "canalLineaBase02": null,
+      "canalLineaBase02Rota": null,
+      "correccionTipo": "plana-expandida",
+      "correccionRetrocesoBPct": 862.46,
+      "fiboUltimoTramo": {
+        "desde": 102.74,
+        "hasta": 91.33,
+        "r382": 95.69,
+        "r50": 97.04,
+        "r618": 98.38,
+        "r786": 100.3
+      },
       "velaVivaAbierta": true
     },
     "1h": {
@@ -276,6 +406,71 @@
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
       "falloEnMaximoDistanciaAtr": -1.45,
+      "zigzagUmbralAtr": 3.0,
+      "zigzagUmbralPrecio": 5.0,
+      "zigzagPivotes": [
+        {
+          "tipo": "H",
+          "precio": 87.33,
+          "barrasAtras": 79,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 84.02,
+          "barrasAtras": 73,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 102.74,
+          "barrasAtras": 24,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 87.66,
+          "barrasAtras": 23,
+          "enCurso": false
+        },
+        {
+          "tipo": "H",
+          "precio": 97.23,
+          "barrasAtras": 4,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 92.21,
+          "barrasAtras": 0,
+          "enCurso": true
+        }
+      ],
+      "elliottEstructura": "no-compatible",
+      "elliottRegla1Onda2NoRompeOrigen": false,
+      "elliottRegla2Onda3NoEsLaMasCorta": true,
+      "elliottRegla3Onda4NoSolapaOnda1": false,
+      "elliottFalloDeQuinta": true,
+      "elliottLecturaProvisional": true,
+      "elliottOndasPct": [
+        3.79,
+        21.44,
+        17.27,
+        10.96,
+        5.75
+      ],
+      "canalLineaBase02": null,
+      "canalLineaBase02Rota": null,
+      "correccionTipo": "plana",
+      "correccionRetrocesoBPct": 63.46,
+      "fiboUltimoTramo": {
+        "desde": 97.23,
+        "hasta": 92.21,
+        "r382": 94.13,
+        "r50": 94.72,
+        "r618": 95.31,
+        "r786": 96.16
+      },
       "velaVivaAbierta": true
     }
   }
