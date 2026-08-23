@@ -32,7 +32,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p snapshots
-          for par in ETH-USDT BTC-USDT SOL-USDT; do
+          # BTC primero a proposito: es el que veta a los demas.
+          for par in BTC-USDT ETH-USDT SOL-USDT XRP-USDT ADA-USDT HBAR-USDT; do
             nombre="${par//-/}"
             echo "-> $par"
             python get_market_snapshot.py \

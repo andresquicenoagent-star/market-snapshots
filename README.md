@@ -27,7 +27,12 @@ Efecto secundario util: no depende de que ningun ordenador concreto este encendi
 - `snapshots/latest-<ACTIVO>.json` — el ultimo snapshot de cada activo. Se sobrescribe en
   cada ejecucion; el historico no se guarda aqui.
 
-Activos: ETH-USDT, BTC-USDT, SOL-USDT.
+Activos: **BTC-USDT** (primero a proposito: es el que veta a los demas), ETH-USDT,
+SOL-USDT, XRP-USDT, ADA-USDT, HBAR-USDT.
+
+Aviso sobre HBAR: su volumen en OKX es muy delgado comparado con el resto (~17M USDT a 7
+dias, contra 4.500M de BTC). El perfil de volumen y el POC son menos fiables ahi. Si lo
+operas en otro exchange, sus niveles no tienen por que coincidir con estos.
 
 ## Frescura de los datos
 
