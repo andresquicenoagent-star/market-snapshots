@@ -385,6 +385,190 @@ def momentum_structure(val, candles, serie=24):
 
 # Cuantas veces el precio cruzo la EMA55 en las ultimas N velas.
 # Muchos cruces = lateral: ahi el cruce de medias no significa nada.
+def zigzag(candles, atr_serie, k):
+    """Esqueleto de la estructura: pivotes alternos confirmados por retroceso.
+
+    Un pivote se confirma cuando el precio retrocede `k` ATR desde el extremo.
+    Distinto de swing_levels (pivotes de 2 velas, ruidosos): esto da los tramos
+    del movimiento, que es lo que Elliott necesita para contar.
+
+    El umbral usa el ATR **de cada vela**, no el actual. Con el ATR actual, una
+    subida de volatilidad reciente se traga todos los tramos antiguos y el
+    zigzag deja de segmentar: en 4h daba 3 pivotes en 300 velas.
+    """
+    n = len(candles)
+    if n < 2 or k <= 0:
+        return []
+    high = [c["h"] for c in candles]
+    low = [c["l"] for c in candles]
+
+    # ATR por vela, arrastrando el ultimo valido hacia atras mientras no hay.
+    umbrales = [0.0] * n
+    ultimo = 0.0
+    for x in range(n):
+        a = atr_serie[x] if x < len(atr_serie) else NAN
+        if not isnan(a) and a > 0:
+            ultimo = a
+        umbrales[x] = k * ultimo
+    primero = next((u for u in umbrales if u > 0), 0.0)
+    if primero <= 0:
+        return []
+    for x in range(n):
+        if umbrales[x] <= 0:
+            umbrales[x] = primero
+
+    piv = []
+    d = 0
+    hi_p, hi_i = high[0], 0
+    lo_p, lo_i = low[0], 0
+
+    for i in range(1, n):
+        if d == 1:
+            if high[i] > hi_p:
+                hi_p, hi_i = high[i], i
+            elif hi_p - low[i] >= umbrales[i]:
+                piv.append({"idx": hi_i, "precio": hi_p, "tipo": "H"})
+                d = -1
+                lo_p, lo_i = low[i], i
+        elif d == -1:
+            if low[i] < lo_p:
+                lo_p, lo_i = low[i], i
+            elif high[i] - lo_p >= umbrales[i]:
+                piv.append({"idx": lo_i, "precio": lo_p, "tipo": "L"})
+                d = 1
+                hi_p, hi_i = high[i], i
+        else:
+            if high[i] > hi_p:
+                hi_p, hi_i = high[i], i
+            if low[i] < lo_p:
+                lo_p, lo_i = low[i], i
+            if hi_p - low[i] >= umbrales[i]:
+                piv.append({"idx": hi_i, "precio": hi_p, "tipo": "H"})
+                d = -1
+                lo_p, lo_i = low[i], i
+            elif high[i] - lo_p >= umbrales[i]:
+                piv.append({"idx": lo_i, "precio": lo_p, "tipo": "L"})
+                d = 1
+                hi_p, hi_i = high[i], i
+
+    # El extremo en curso todavia no es pivote: el precio no ha retrocedido lo
+    # suficiente. Se anade marcado como no confirmado porque es donde esta el
+    # mercado ahora mismo.
+    if d == 1:
+        piv.append({"idx": hi_i, "precio": hi_p, "tipo": "H", "enCurso": True})
+    elif d == -1:
+        piv.append({"idx": lo_i, "precio": lo_p, "tipo": "L", "enCurso": True})
+    return piv
+
+
+def elliott(piv, i_actual):
+    """Las tres reglas inquebrantables sobre los ultimos 5 tramos.
+
+    No cuenta ondas: dice si lo que hay es COMPATIBLE con un impulso. El conteo
+    es del operador. Fuente: ONDAS-DE-ELLIOTT-ZIG-ZAG-PLANAS, reglas de pagina 1.
+    """
+    vacio = {
+        "estructura": "insuficiente", "r1": None, "r2": None, "r3": None,
+        "falloQuinta": None, "ondasPct": None,
+        "lineaBase02": None, "lineaBase02Rota": None, "provisional": None,
+    }
+    if len(piv) < 6:
+        return vacio
+
+    p = piv[-6:]
+    # Tienen que alternar H/L para ser tramos de verdad.
+    for k in range(1, 6):
+        if p[k]["tipo"] == p[k - 1]["tipo"]:
+            return vacio
+
+    alcista = (p[0]["tipo"] == "L")
+    v = [q["precio"] for q in p]
+
+    # Longitudes de las ondas 1..5, siempre positivas.
+    ondas = [abs(v[k + 1] - v[k]) for k in range(5)]
+    base = v[0] if v[0] != 0 else 1.0
+    ondas_pct = [round(100.0 * o / abs(base), 2) for o in ondas]
+
+    if alcista:
+        r1 = v[2] > v[0]            # la onda 2 no rompe el origen de la 1
+        r3 = v[4] > v[1]            # la onda 4 no se solapa con la onda 1
+        fallo5 = v[5] <= v[3]       # la onda 5 no supera a la 3
+    else:
+        r1 = v[2] < v[0]
+        r3 = v[4] < v[1]
+        fallo5 = v[5] >= v[3]
+    # la onda 3 nunca es la mas corta de 1, 3 y 5
+    r2 = not (ondas[2] < ondas[0] and ondas[2] < ondas[4])
+
+    if r1 and r2 and r3:
+        estructura = "impulso-alcista" if alcista else "impulso-bajista"
+    else:
+        estructura = "no-compatible"
+
+    # Linea base 0-2: une el origen de la onda 1 con el final de la onda 2, y
+    # sirve de stop. Si se rompe, la onda 2 se esta complicando y la 3 no ha
+    # empezado. Se proyecta hasta la vela actual.
+    #
+    # Solo se calcula si la estructura es compatible con un impulso. Extrapolar
+    # esa recta sobre una estructura que no lo es da numeros absurdos —en 1h
+    # daba una base en 3050 con el precio en 2400— que invitan a leer una senal
+    # donde no hay ninguna.
+    lb = None
+    lb_rota = None
+    di = p[2]["idx"] - p[0]["idx"]
+    if estructura.startswith("impulso") and di > 0:
+        pend = (v[2] - v[0]) / di
+        lb = round(v[0] + pend * (i_actual - p[0]["idx"]), 2)
+        lb_rota = (v[5] < lb) if alcista else (v[5] > lb)
+
+    return {"estructura": estructura, "r1": r1, "r2": r2, "r3": r3,
+            "falloQuinta": fallo5, "ondasPct": ondas_pct,
+            "lineaBase02": lb, "lineaBase02Rota": lb_rota,
+            # Si el ultimo pivote no esta confirmado, la lectura es provisional:
+            # el tramo en curso puede seguir y mover las cinco ondas.
+            "provisional": bool(p[5].get("enCurso", False))}
+
+
+def correccion(piv):
+    """Clasifica los ultimos 3 tramos como zigzag, plana o plana expandida.
+
+    Regla del PDF: en el zigzag la onda B retrocede <= 61,8% de A y la C supera
+    el final de A. En la plana, B retrocede mas del 61,8% y C no supera el final
+    de A. Si B supera el origen de A, es plana expandida.
+    """
+    if len(piv) < 4:
+        return {"tipo": "insuficiente", "retrocesoBPct": None}
+
+    p = piv[-4:]
+    for k in range(1, 4):
+        if p[k]["tipo"] == p[k - 1]["tipo"]:
+            return {"tipo": "insuficiente", "retrocesoBPct": None}
+
+    v = [q["precio"] for q in p]
+    len_a = abs(v[1] - v[0])
+    if len_a == 0:
+        return {"tipo": "indefinida", "retrocesoBPct": None}
+    retro_b = round(100.0 * abs(v[2] - v[1]) / len_a, 2)
+
+    baja = v[1] < v[0]              # la onda A va hacia abajo
+    if baja:
+        c_supera_a = v[3] < v[1]
+        b_supera_origen = v[2] > v[0]
+    else:
+        c_supera_a = v[3] > v[1]
+        b_supera_origen = v[2] < v[0]
+
+    if b_supera_origen:
+        tipo = "plana-expandida"
+    elif retro_b <= 61.8 and c_supera_a:
+        tipo = "zigzag"
+    elif retro_b > 61.8 and not c_supera_a:
+        tipo = "plana"
+    else:
+        tipo = "indefinida"
+    return {"tipo": tipo, "retrocesoBPct": retro_b}
+
+
 def cruces_ema(close, ema_vals, lookback=20):
     n = len(close)
     c = 0
@@ -495,6 +679,53 @@ def timeframe_report(candles, label, range_lookback=30, vp_lookback=120):
                          and mom["pendiente3"] is not None
                          and mom["pendiente3"] < 0)
 
+    # --- Geometria: zigzag, Elliott, Fibonacci ------------------------------
+    # El umbral del zigzag va en ATR para que se adapte a la volatilidad del
+    # activo y del timeframe: 3 ATR filtra el ruido sin comerse los tramos.
+    ZZ_K = 3.0
+    zz_umbral = ZZ_K * atr_now if not isnan(atr_now) else 0.0
+    piv = zigzag(closed, adx_r["atr"], ZZ_K)
+    ell = elliott(piv, i)
+    corr = correccion(piv)
+
+    piv_out = [
+        OrderedDict([
+            ("tipo", q["tipo"]),
+            ("precio", _r(q["precio"])),
+            ("barrasAtras", i - q["idx"]),
+            ("enCurso", bool(q.get("enCurso", False))),
+        ])
+        for q in piv[-6:]
+    ]
+
+    # Fibonacci del ultimo tramo, como REFERENCIA de donde podria apoyarse un
+    # retroceso. No genera veredicto: son niveles para mirar, no gatillos.
+    fibo = None
+    if len(piv) >= 2:
+        desde = piv[-2]["precio"]
+        hasta = piv[-1]["precio"]
+        d = hasta - desde
+
+        def _rf(x):
+            """Redondeo half-up explicito, identico en Python y en PowerShell.
+
+            El 50% cae exactamente en el medio punto muy a menudo (es una media
+            de dos precios de 2 decimales), y ahi .NET y Python rompen el empate
+            distinto: daban 2205.48 contra 2205.49. Con floor(x*100+0.5) los dos
+            hacen la misma operacion sobre el mismo double. Los precios son
+            positivos, asi que no hay que preocuparse por el lado negativo.
+            """
+            return math.floor(x * 100.0 + 0.5) / 100.0
+
+        fibo = OrderedDict([
+            ("desde", _rf(desde)),
+            ("hasta", _rf(hasta)),
+            ("r382", _rf(hasta - d * 0.382)),
+            ("r50", _rf(hasta - d * 0.5)),
+            ("r618", _rf(hasta - d * 0.618)),
+            ("r786", _rf(hasta - d * 0.786)),
+        ])
+
     def pend5():
         if isnan(ema55[i]) or isnan(ema55[j5]):
             return NAN
@@ -568,6 +799,21 @@ def timeframe_report(candles, label, range_lookback=30, vp_lookback=120):
         ("areaNoOperable", area_no_operable),
         ("falloEnMaximoAnterior", fallo_max),
         ("falloEnMaximoDistanciaAtr", fallo_dist),
+        ("zigzagUmbralAtr", ZZ_K),
+        ("zigzagUmbralPrecio", _r(zz_umbral)),
+        ("zigzagPivotes", piv_out),
+        ("elliottEstructura", ell["estructura"]),
+        ("elliottRegla1Onda2NoRompeOrigen", ell["r1"]),
+        ("elliottRegla2Onda3NoEsLaMasCorta", ell["r2"]),
+        ("elliottRegla3Onda4NoSolapaOnda1", ell["r3"]),
+        ("elliottFalloDeQuinta", ell["falloQuinta"]),
+        ("elliottLecturaProvisional", ell["provisional"]),
+        ("elliottOndasPct", ell["ondasPct"]),
+        ("canalLineaBase02", ell["lineaBase02"]),
+        ("canalLineaBase02Rota", ell["lineaBase02Rota"]),
+        ("correccionTipo", corr["tipo"]),
+        ("correccionRetrocesoBPct", corr["retrocesoBPct"]),
+        ("fiboUltimoTramo", fibo),
         ("velaVivaAbierta", live_open),
     ])
 
