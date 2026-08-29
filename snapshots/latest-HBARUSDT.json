@@ -1,7 +1,7 @@
 {
   "activo": "HBAR-USDT",
-  "generadoUtc": "2026-08-29 06:51:45 UTC",
-  "generadoLocal": "2026-08-29 06:51:45",
+  "generadoUtc": "2026-08-29 07:06:42 UTC",
+  "generadoLocal": "2026-08-29 07:06:42",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 0.08,
   "timeframes": {
@@ -321,28 +321,28 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.08,
-      "fechaUltimoCierre": "2026-08-29 05:00 UTC",
+      "fechaUltimoCierre": "2026-08-29 06:00 UTC",
       "ema10": 0.08,
       "ema21": 0.08,
       "ema55": 0.08,
       "ema10SobreEma55": false,
       "ema55Pendiente5": -0.0,
-      "precioVsEma55Pct": -2.49,
-      "emaSeparacionPct": 1.92,
-      "emaSeparacionPctHace5": 1.72,
+      "precioVsEma55Pct": -2.38,
+      "emaSeparacionPct": 1.93,
+      "emaSeparacionPctHace5": 1.8,
       "emaEstrechandose": false,
-      "adx": 35.76,
-      "adxHace5": 31.32,
+      "adx": 36.96,
+      "adxHace5": 32.48,
       "adxSubiendo": true,
-      "diPlus": 11.97,
-      "diMinus": 32.06,
+      "diPlus": 11.16,
+      "diMinus": 35.88,
       "atr14": 0.0,
       "atrPct": 0.84,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
       "momentum": -0.0,
       "momentumPrev": -0.0,
-      "momentumExpandiendo": true,
+      "momentumExpandiendo": false,
       "momentumSerie": [
         -0.0,
         -0.0,
@@ -371,11 +371,11 @@
       ],
       "momentumPendiente3": 0.0,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 27,
+      "momentumBarrasTramo": 28,
       "momentumPicoTramo": -0.0,
       "momentumPicoPrevio": -0.0,
       "momentumPicoVsPrevioPct": 53,
-      "momentumBarrasDesdePico": 13,
+      "momentumBarrasDesdePico": 14,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": true,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 0.08,
       "rangoBajo": 0.07,
-      "posicionEnRangoPct": 25.7,
+      "posicionEnRangoPct": 26.03,
       "poc": 0.08,
       "valueAreaAlto": 0.08,
       "valueAreaBajo": 0.08,
@@ -410,66 +410,66 @@
       "zigzagUmbralPrecio": 0.0,
       "zigzagPivotes": [
         {
-          "tipo": "L",
-          "precio": 0.08,
-          "barrasAtras": 124,
-          "enCurso": false
-        },
-        {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 98,
+          "barrasAtras": 99,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.08,
-          "barrasAtras": 62,
+          "barrasAtras": 63,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 28,
+          "barrasAtras": 29,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 13,
+          "barrasAtras": 14,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 8,
+          "barrasAtras": 9,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 0.07,
+          "barrasAtras": 0,
           "enCurso": true
         }
       ],
       "elliottEstructura": "no-compatible",
-      "elliottRegla1Onda2NoRompeOrigen": false,
+      "elliottRegla1Onda2NoRompeOrigen": true,
       "elliottRegla2Onda3NoEsLaMasCorta": true,
       "elliottRegla3Onda4NoSolapaOnda1": false,
       "elliottFalloDeQuinta": true,
       "elliottLecturaProvisional": true,
       "elliottOndasPct": [
-        8.9,
-        10.31,
-        4.51,
-        7.84,
-        3.97
+        9.47,
+        4.14,
+        7.2,
+        3.64,
+        2.43
       ],
       "canalLineaBase02": null,
       "canalLineaBase02Rota": null,
-      "correccionTipo": "plana-expandida",
-      "correccionRetrocesoBPct": 173.93,
+      "correccionTipo": "indefinida",
+      "correccionRetrocesoBPct": 50.58,
       "fiboUltimoTramo": {
-        "desde": 0.07,
-        "hasta": 0.08,
+        "desde": 0.08,
+        "hasta": 0.07,
         "r382": 0.08,
         "r50": 0.08,
-        "r618": 0.07,
-        "r786": 0.07
+        "r618": 0.08,
+        "r786": 0.08
       },
       "velaVivaAbierta": true
     }
