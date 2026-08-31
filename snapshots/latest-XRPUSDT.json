@@ -1,9 +1,9 @@
 {
   "activo": "XRP-USDT",
-  "generadoUtc": "2026-08-31 14:36:38 UTC",
-  "generadoLocal": "2026-08-31 14:36:38",
+  "generadoUtc": "2026-08-31 14:51:28 UTC",
+  "generadoLocal": "2026-08-31 14:51:28",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 1.37,
+  "precioActual": 1.38,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
