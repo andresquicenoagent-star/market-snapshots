@@ -1,7 +1,7 @@
 {
   "activo": "ADA-USDT",
-  "generadoUtc": "2026-08-31 01:51:43 UTC",
-  "generadoLocal": "2026-08-31 01:51:43",
+  "generadoUtc": "2026-08-31 02:06:47 UTC",
+  "generadoLocal": "2026-08-31 02:06:47",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 0.19,
   "timeframes": {
@@ -321,21 +321,21 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.19,
-      "fechaUltimoCierre": "2026-08-31 00:00 UTC",
+      "fechaUltimoCierre": "2026-08-31 01:00 UTC",
       "ema10": 0.2,
       "ema21": 0.2,
       "ema55": 0.2,
       "ema10SobreEma55": false,
       "ema55Pendiente5": -0.0,
-      "precioVsEma55Pct": -4.08,
-      "emaSeparacionPct": 1.62,
-      "emaSeparacionPctHace5": 0.12,
+      "precioVsEma55Pct": -4.71,
+      "emaSeparacionPct": 2.04,
+      "emaSeparacionPctHace5": 0.06,
       "emaEstrechandose": false,
-      "adx": 27.49,
-      "adxHace5": 24.16,
+      "adx": 29.57,
+      "adxHace5": 22.81,
       "adxSubiendo": true,
-      "diPlus": 10.35,
-      "diMinus": 37.32,
+      "diPlus": 9.74,
+      "diMinus": 35.11,
       "atr14": 0.0,
       "atrPct": 1.38,
       "squeezeComprimido": false,
@@ -351,7 +351,6 @@
         0.0,
         0.0,
         0.0,
-        0.0,
         -0.0,
         0.0,
         0.0,
@@ -366,15 +365,16 @@
         0.0,
         0.0,
         0.0,
+        -0.0,
         -0.0,
         -0.0
       ],
       "momentumPendiente3": -0.0,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 2,
+      "momentumBarrasTramo": 3,
       "momentumPicoTramo": -0.0,
       "momentumPicoPrevio": -0.0,
-      "momentumPicoVsPrevioPct": 3141,
+      "momentumPicoVsPrevioPct": 4816,
       "momentumBarrasDesdePico": 0,
       "momentumGirando": false,
       "divergenciaBajista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 0.21,
       "rangoBajo": 0.19,
-      "posicionEnRangoPct": 28.14,
+      "posicionEnRangoPct": 18.56,
       "poc": 0.21,
       "valueAreaAlto": 0.23,
       "valueAreaBajo": 0.21,
@@ -397,7 +397,7 @@
         0.2,
         0.2,
         0.2,
-        0.2
+        0.19
       ],
       "areaNoOperableCond1TechoTocado": true,
       "areaNoOperableCond2LomoIgualOMayor": false,
@@ -412,37 +412,37 @@
         {
           "tipo": "H",
           "precio": 0.23,
-          "barrasAtras": 142,
+          "barrasAtras": 143,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.2,
-          "barrasAtras": 104,
+          "barrasAtras": 105,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.22,
-          "barrasAtras": 71,
+          "barrasAtras": 72,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.2,
-          "barrasAtras": 40,
+          "barrasAtras": 41,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.21,
-          "barrasAtras": 8,
+          "barrasAtras": 9,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.19,
-          "barrasAtras": 1,
+          "barrasAtras": 2,
           "enCurso": true
         }
       ],
