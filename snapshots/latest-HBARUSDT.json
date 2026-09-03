@@ -1,7 +1,7 @@
 {
   "activo": "HBAR-USDT",
-  "generadoUtc": "2026-09-03 22:51:48 UTC",
-  "generadoLocal": "2026-09-03 22:51:48",
+  "generadoUtc": "2026-09-03 23:10:51 UTC",
+  "generadoLocal": "2026-09-03 23:10:51",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 0.08,
   "timeframes": {
@@ -321,23 +321,23 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.08,
-      "fechaUltimoCierre": "2026-09-03 21:00 UTC",
+      "fechaUltimoCierre": "2026-09-03 22:00 UTC",
       "ema10": 0.08,
       "ema21": 0.08,
       "ema55": 0.08,
       "ema10SobreEma55": true,
       "ema55Pendiente5": 0.0,
-      "precioVsEma55Pct": 4.32,
-      "emaSeparacionPct": 3.71,
-      "emaSeparacionPctHace5": 3.38,
+      "precioVsEma55Pct": 3.54,
+      "emaSeparacionPct": 3.57,
+      "emaSeparacionPctHace5": 3.53,
       "emaEstrechandose": false,
-      "adx": 50.02,
-      "adxHace5": 41.56,
+      "adx": 49.5,
+      "adxHace5": 44.02,
       "adxSubiendo": true,
-      "diPlus": 34.61,
-      "diMinus": 7.9,
+      "diPlus": 31.82,
+      "diMinus": 12.75,
       "atr14": 0.0,
-      "atrPct": 0.97,
+      "atrPct": 0.99,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
       "momentum": 0.0,
@@ -371,11 +371,11 @@
       ],
       "momentumPendiente3": -0.0,
       "momentumSignoTramo": 1,
-      "momentumBarrasTramo": 27,
+      "momentumBarrasTramo": 28,
       "momentumPicoTramo": 0.0,
       "momentumPicoPrevio": 0.0,
       "momentumPicoVsPrevioPct": 319,
-      "momentumBarrasDesdePico": 4,
+      "momentumBarrasDesdePico": 5,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 0.08,
       "rangoBajo": 0.07,
-      "posicionEnRangoPct": 81.58,
+      "posicionEnRangoPct": 75.64,
       "poc": 0.08,
       "valueAreaAlto": 0.08,
       "valueAreaBajo": 0.07,
@@ -410,66 +410,66 @@
       "zigzagUmbralPrecio": 0.0,
       "zigzagPivotes": [
         {
-          "tipo": "L",
-          "precio": 0.07,
-          "barrasAtras": 131,
-          "enCurso": false
-        },
-        {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 99,
+          "barrasAtras": 100,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 94,
+          "barrasAtras": 95,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 57,
+          "barrasAtras": 58,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 35,
+          "barrasAtras": 36,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 5,
+          "barrasAtras": 6,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 0.08,
+          "barrasAtras": 0,
           "enCurso": true
         }
       ],
       "elliottEstructura": "no-compatible",
-      "elliottRegla1Onda2NoRompeOrigen": false,
+      "elliottRegla1Onda2NoRompeOrigen": true,
       "elliottRegla2Onda3NoEsLaMasCorta": true,
       "elliottRegla3Onda4NoSolapaOnda1": false,
-      "elliottFalloDeQuinta": false,
+      "elliottFalloDeQuinta": true,
       "elliottLecturaProvisional": true,
       "elliottOndasPct": [
-        2.0,
-        4.25,
-        3.54,
-        3.81,
-        11.06
+        4.17,
+        3.47,
+        3.73,
+        10.84,
+        3.14
       ],
       "canalLineaBase02": null,
       "canalLineaBase02Rota": null,
       "correccionTipo": "plana-expandida",
-      "correccionRetrocesoBPct": 107.58,
+      "correccionRetrocesoBPct": 290.49,
       "fiboUltimoTramo": {
-        "desde": 0.07,
+        "desde": 0.08,
         "hasta": 0.08,
         "r382": 0.08,
         "r50": 0.08,
         "r618": 0.08,
-        "r786": 0.07
+        "r786": 0.08
       },
       "velaVivaAbierta": true
     }
