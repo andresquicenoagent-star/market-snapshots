@@ -1,7 +1,7 @@
 {
   "activo": "ADA-USDT",
-  "generadoUtc": "2026-09-04 06:58:51 UTC",
-  "generadoLocal": "2026-09-04 06:58:51",
+  "generadoUtc": "2026-09-04 07:18:06 UTC",
+  "generadoLocal": "2026-09-04 07:18:06",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 0.22,
   "timeframes": {
@@ -321,23 +321,23 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.22,
-      "fechaUltimoCierre": "2026-09-04 05:00 UTC",
+      "fechaUltimoCierre": "2026-09-04 06:00 UTC",
       "ema10": 0.22,
       "ema21": 0.22,
       "ema55": 0.21,
       "ema10SobreEma55": true,
       "ema55Pendiente5": 0.0,
-      "precioVsEma55Pct": 5.1,
-      "emaSeparacionPct": 5.43,
-      "emaSeparacionPctHace5": 5.76,
+      "precioVsEma55Pct": 4.9,
+      "emaSeparacionPct": 5.18,
+      "emaSeparacionPctHace5": 5.72,
       "emaEstrechandose": true,
-      "adx": 49.63,
-      "adxHace5": 51.18,
+      "adx": 48.54,
+      "adxHace5": 50.61,
       "adxSubiendo": false,
-      "diPlus": 29.33,
-      "diMinus": 13.89,
+      "diPlus": 27.87,
+      "diMinus": 13.63,
       "atr14": 0.0,
-      "atrPct": 1.52,
+      "atrPct": 1.48,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
       "momentum": 0.01,
@@ -371,11 +371,11 @@
       ],
       "momentumPendiente3": -0.0,
       "momentumSignoTramo": 1,
-      "momentumBarrasTramo": 37,
+      "momentumBarrasTramo": 38,
       "momentumPicoTramo": 0.01,
       "momentumPicoPrevio": 0.0,
       "momentumPicoVsPrevioPct": 292,
-      "momentumBarrasDesdePico": 8,
+      "momentumBarrasDesdePico": 9,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -389,7 +389,7 @@
       "valueAreaBajo": 0.19,
       "swingHighs": [
         0.21,
-        0.21,
+        0.23,
         0.23,
         0.23
       ],
@@ -412,37 +412,37 @@
         {
           "tipo": "L",
           "precio": 0.2,
-          "barrasAtras": 141,
+          "barrasAtras": 142,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.21,
-          "barrasAtras": 109,
+          "barrasAtras": 110,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.19,
-          "barrasAtras": 102,
+          "barrasAtras": 103,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.2,
-          "barrasAtras": 72,
+          "barrasAtras": 73,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.19,
-          "barrasAtras": 43,
+          "barrasAtras": 44,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.23,
-          "barrasAtras": 1,
+          "barrasAtras": 2,
           "enCurso": true
         }
       ],
