@@ -1,9 +1,9 @@
 {
   "activo": "SOL-USDT",
-  "generadoUtc": "2026-09-05 04:53:37 UTC",
-  "generadoLocal": "2026-09-05 04:53:37",
+  "generadoUtc": "2026-09-05 05:11:21 UTC",
+  "generadoLocal": "2026-09-05 05:11:21",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 101.86,
+  "precioActual": 101.78,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -320,31 +320,30 @@
     "1h": {
       "timeframe": "1h",
       "velasCerradas": 299,
-      "ultimoCierre": 101.88,
-      "fechaUltimoCierre": "2026-09-05 03:00 UTC",
-      "ema10": 101.88,
-      "ema21": 102.14,
-      "ema55": 102.21,
+      "ultimoCierre": 101.75,
+      "fechaUltimoCierre": "2026-09-05 04:00 UTC",
+      "ema10": 101.86,
+      "ema21": 102.11,
+      "ema55": 102.2,
       "ema10SobreEma55": false,
       "ema55Pendiente5": -0.07,
-      "precioVsEma55Pct": -0.33,
+      "precioVsEma55Pct": -0.44,
       "emaSeparacionPct": 0.33,
-      "emaSeparacionPctHace5": 0.4,
+      "emaSeparacionPctHace5": 0.38,
       "emaEstrechandose": true,
-      "adx": 28.15,
-      "adxHace5": 30.62,
+      "adx": 27.7,
+      "adxHace5": 30.33,
       "adxSubiendo": false,
-      "diPlus": 15.98,
-      "diMinus": 24.12,
-      "atr14": 0.68,
-      "atrPct": 0.67,
+      "diPlus": 15.54,
+      "diMinus": 24.23,
+      "atr14": 0.65,
+      "atrPct": 0.64,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
-      "momentum": -0.89,
-      "momentumPrev": -1.06,
+      "momentum": -0.66,
+      "momentumPrev": -0.89,
       "momentumExpandiendo": false,
       "momentumSerie": [
-        1.36,
         0.97,
         0.55,
         0.14,
@@ -367,15 +366,16 @@
         -1.42,
         -1.25,
         -1.06,
-        -0.89
+        -0.89,
+        -0.66
       ],
-      "momentumPendiente3": 0.54,
+      "momentumPendiente3": 0.59,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 20,
+      "momentumBarrasTramo": 21,
       "momentumPicoTramo": -1.97,
       "momentumPicoPrevio": -2.24,
       "momentumPicoVsPrevioPct": 88,
-      "momentumBarrasDesdePico": 10,
+      "momentumBarrasDesdePico": 11,
       "momentumGirando": true,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 105.93,
       "rangoBajo": 99.72,
-      "posicionEnRangoPct": 34.78,
+      "posicionEnRangoPct": 32.69,
       "poc": 103.53,
       "valueAreaAlto": 105.63,
       "valueAreaBajo": 100.75,
@@ -394,10 +394,10 @@
         102.18
       ],
       "swingLows": [
-        103.25,
         103.22,
         100.19,
-        101.45
+        101.45,
+        101.68
       ],
       "areaNoOperableCond1TechoTocado": true,
       "areaNoOperableCond2LomoIgualOMayor": false,
@@ -405,44 +405,44 @@
       "areaNoOperableCond4PrecedidoLateral": false,
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
-      "falloEnMaximoDistanciaAtr": -0.32,
+      "falloEnMaximoDistanciaAtr": -0.34,
       "zigzagUmbralAtr": 3.0,
-      "zigzagUmbralPrecio": 2.05,
+      "zigzagUmbralPrecio": 1.96,
       "zigzagPivotes": [
         {
           "tipo": "H",
           "precio": 107.48,
-          "barrasAtras": 134,
+          "barrasAtras": 135,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 100.32,
-          "barrasAtras": 124,
+          "barrasAtras": 125,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 105.0,
-          "barrasAtras": 105,
+          "barrasAtras": 106,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 97.39,
-          "barrasAtras": 64,
+          "barrasAtras": 65,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 105.93,
-          "barrasAtras": 32,
+          "barrasAtras": 33,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 100.19,
-          "barrasAtras": 15,
+          "barrasAtras": 16,
           "enCurso": true
         }
       ],
