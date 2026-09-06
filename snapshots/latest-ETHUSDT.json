@@ -1,9 +1,9 @@
 {
   "activo": "ETH-USDT",
-  "generadoUtc": "2026-09-06 23:11:17 UTC",
-  "generadoLocal": "2026-09-06 23:11:17",
+  "generadoUtc": "2026-09-06 23:25:40 UTC",
+  "generadoLocal": "2026-09-06 23:25:40",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 2510.73,
+  "precioActual": 2511.21,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
