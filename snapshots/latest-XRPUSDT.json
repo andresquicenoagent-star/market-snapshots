@@ -1,7 +1,7 @@
 {
   "activo": "XRP-USDT",
-  "generadoUtc": "2026-09-08 12:46:59 UTC",
-  "generadoLocal": "2026-09-08 12:46:59",
+  "generadoUtc": "2026-09-08 13:15:09 UTC",
+  "generadoLocal": "2026-09-08 13:15:09",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 1.4,
   "timeframes": {
@@ -320,31 +320,30 @@
     "1h": {
       "timeframe": "1h",
       "velasCerradas": 299,
-      "ultimoCierre": 1.39,
-      "fechaUltimoCierre": "2026-09-08 11:00 UTC",
+      "ultimoCierre": 1.4,
+      "fechaUltimoCierre": "2026-09-08 12:00 UTC",
       "ema10": 1.39,
       "ema21": 1.4,
       "ema55": 1.4,
       "ema10SobreEma55": false,
       "ema55Pendiente5": -0.0,
-      "precioVsEma55Pct": -0.49,
-      "emaSeparacionPct": 0.55,
-      "emaSeparacionPctHace5": 0.76,
+      "precioVsEma55Pct": -0.2,
+      "emaSeparacionPct": 0.48,
+      "emaSeparacionPctHace5": 0.78,
       "emaEstrechandose": true,
-      "adx": 22.81,
-      "adxHace5": 24.49,
+      "adx": 22.7,
+      "adxHace5": 24.92,
       "adxSubiendo": false,
-      "diPlus": 17.49,
-      "diMinus": 25.3,
+      "diPlus": 15.98,
+      "diMinus": 24.59,
       "atr14": 0.01,
-      "atrPct": 0.72,
+      "atrPct": 0.73,
       "squeezeComprimido": true,
-      "squeezeBarrasComprimido": 19,
-      "momentum": -0.0,
-      "momentumPrev": 0.0,
-      "momentumExpandiendo": true,
+      "squeezeBarrasComprimido": 20,
+      "momentum": 0.0,
+      "momentumPrev": -0.0,
+      "momentumExpandiendo": false,
       "momentumSerie": [
-        -0.01,
         -0.01,
         -0.01,
         -0.01,
@@ -367,14 +366,15 @@
         -0.0,
         -0.0,
         0.0,
-        -0.0
+        -0.0,
+        0.0
       ],
       "momentumPendiente3": 0.0,
-      "momentumSignoTramo": -1,
+      "momentumSignoTramo": 1,
       "momentumBarrasTramo": 1,
-      "momentumPicoTramo": -0.0,
-      "momentumPicoPrevio": -0.01,
-      "momentumPicoVsPrevioPct": 4,
+      "momentumPicoTramo": 0.0,
+      "momentumPicoPrevio": 0.0,
+      "momentumPicoVsPrevioPct": 123,
       "momentumBarrasDesdePico": 0,
       "momentumGirando": false,
       "divergenciaBajista": false,
@@ -383,15 +383,15 @@
       "rangoLookback": 48,
       "rangoAlto": 1.43,
       "rangoBajo": 1.38,
-      "posicionEnRangoPct": 31.56,
+      "posicionEnRangoPct": 38.9,
       "poc": 1.4,
       "valueAreaAlto": 1.43,
       "valueAreaBajo": 1.33,
       "swingHighs": [
-        1.43,
         1.41,
         1.4,
-        1.41
+        1.41,
+        1.4
       ],
       "swingLows": [
         1.39,
@@ -400,49 +400,49 @@
         1.38
       ],
       "areaNoOperableCond1TechoTocado": true,
-      "areaNoOperableCond2LomoIgualOMayor": false,
+      "areaNoOperableCond2LomoIgualOMayor": true,
       "areaNoOperableCond3PendienteNegativa": false,
       "areaNoOperableCond4PrecedidoLateral": false,
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
-      "falloEnMaximoDistanciaAtr": -1.0,
+      "falloEnMaximoDistanciaAtr": 0.98,
       "zigzagUmbralAtr": 3.0,
       "zigzagUmbralPrecio": 0.03,
       "zigzagPivotes": [
         {
           "tipo": "H",
           "precio": 1.48,
-          "barrasAtras": 111,
+          "barrasAtras": 112,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 1.38,
-          "barrasAtras": 93,
+          "barrasAtras": 94,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 1.43,
-          "barrasAtras": 56,
+          "barrasAtras": 57,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 1.4,
-          "barrasAtras": 45,
+          "barrasAtras": 46,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 1.43,
-          "barrasAtras": 33,
+          "barrasAtras": 34,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 1.38,
-          "barrasAtras": 20,
+          "barrasAtras": 21,
           "enCurso": true
         }
       ],
