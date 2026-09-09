@@ -1,9 +1,9 @@
 {
   "activo": "SOL-USDT",
-  "generadoUtc": "2026-09-09 21:53:57 UTC",
-  "generadoLocal": "2026-09-09 21:53:57",
+  "generadoUtc": "2026-09-09 22:11:52 UTC",
+  "generadoLocal": "2026-09-09 22:11:52",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 101.98,
+  "precioActual": 101.37,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -320,31 +320,30 @@
     "1h": {
       "timeframe": "1h",
       "velasCerradas": 299,
-      "ultimoCierre": 102.59,
-      "fechaUltimoCierre": "2026-09-09 20:00 UTC",
-      "ema10": 103.24,
-      "ema21": 103.5,
-      "ema55": 103.74,
+      "ultimoCierre": 102.1,
+      "fechaUltimoCierre": "2026-09-09 21:00 UTC",
+      "ema10": 103.04,
+      "ema21": 103.37,
+      "ema55": 103.68,
       "ema10SobreEma55": false,
-      "ema55Pendiente5": -0.15,
-      "precioVsEma55Pct": -1.11,
-      "emaSeparacionPct": 0.48,
-      "emaSeparacionPctHace5": 0.07,
+      "ema55Pendiente5": -0.19,
+      "precioVsEma55Pct": -1.53,
+      "emaSeparacionPct": 0.62,
+      "emaSeparacionPctHace5": 0.13,
       "emaEstrechandose": false,
-      "adx": 16.73,
-      "adxHace5": 12.92,
+      "adx": 18.12,
+      "adxHace5": 13.67,
       "adxSubiendo": true,
-      "diPlus": 14.5,
-      "diMinus": 30.63,
+      "diPlus": 13.47,
+      "diMinus": 28.78,
       "atr14": 0.87,
       "atrPct": 0.85,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
-      "momentum": -0.75,
-      "momentumPrev": -0.56,
+      "momentum": -1.0,
+      "momentumPrev": -0.75,
       "momentumExpandiendo": true,
       "momentumSerie": [
-        0.4,
         0.43,
         0.45,
         0.5,
@@ -367,14 +366,15 @@
         -0.09,
         -0.24,
         -0.56,
-        -0.75
+        -0.75,
+        -1.0
       ],
-      "momentumPendiente3": -0.66,
+      "momentumPendiente3": -0.76,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 4,
-      "momentumPicoTramo": -0.75,
+      "momentumBarrasTramo": 5,
+      "momentumPicoTramo": -1.0,
       "momentumPicoPrevio": -1.23,
-      "momentumPicoVsPrevioPct": 61,
+      "momentumPicoVsPrevioPct": 81,
       "momentumBarrasDesdePico": 0,
       "momentumGirando": false,
       "divergenciaBajista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 105.19,
       "rangoBajo": 101.72,
-      "posicionEnRangoPct": 25.07,
+      "posicionEnRangoPct": 10.95,
       "poc": 103.48,
       "valueAreaAlto": 106.12,
       "valueAreaBajo": 102.47,
@@ -412,36 +412,36 @@
         {
           "tipo": "H",
           "precio": 105.93,
-          "barrasAtras": 145,
+          "barrasAtras": 146,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 100.19,
-          "barrasAtras": 128,
+          "barrasAtras": 129,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 107.34,
-          "barrasAtras": 80,
+          "barrasAtras": 81,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 101.72,
-          "barrasAtras": 31,
+          "barrasAtras": 32,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 105.19,
-          "barrasAtras": 13,
+          "barrasAtras": 14,
           "enCurso": false
         },
         {
           "tipo": "L",
-          "precio": 101.85,
+          "precio": 101.81,
           "barrasAtras": 0,
           "enCurso": true
         }
@@ -457,7 +457,7 @@
         6.75,
         5.31,
         3.28,
-        3.15
+        3.19
       ],
       "canalLineaBase02": null,
       "canalLineaBase02Rota": null,
@@ -465,11 +465,11 @@
       "correccionRetrocesoBPct": 61.74,
       "fiboUltimoTramo": {
         "desde": 105.19,
-        "hasta": 101.85,
-        "r382": 103.13,
-        "r50": 103.52,
-        "r618": 103.91,
-        "r786": 104.48
+        "hasta": 101.81,
+        "r382": 103.1,
+        "r50": 103.5,
+        "r618": 103.9,
+        "r786": 104.47
       },
       "velaVivaAbierta": true
     }
