@@ -1,9 +1,9 @@
 {
   "activo": "HBAR-USDT",
-  "generadoUtc": "2026-09-10 16:45:48 UTC",
-  "generadoLocal": "2026-09-10 16:45:48",
+  "generadoUtc": "2026-09-10 17:11:51 UTC",
+  "generadoLocal": "2026-09-10 17:11:51",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 0.07,
+  "precioActual": 0.08,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -321,28 +321,28 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.08,
-      "fechaUltimoCierre": "2026-09-10 15:00 UTC",
+      "fechaUltimoCierre": "2026-09-10 16:00 UTC",
       "ema10": 0.08,
       "ema21": 0.08,
       "ema55": 0.08,
       "ema10SobreEma55": false,
       "ema55Pendiente5": -0.0,
-      "precioVsEma55Pct": -2.99,
-      "emaSeparacionPct": 2.45,
-      "emaSeparacionPctHace5": 2.26,
+      "precioVsEma55Pct": -3.47,
+      "emaSeparacionPct": 2.53,
+      "emaSeparacionPctHace5": 2.23,
       "emaEstrechandose": false,
-      "adx": 46.68,
-      "adxHace5": 42.7,
+      "adx": 47.78,
+      "adxHace5": 43.0,
       "adxSubiendo": true,
-      "diPlus": 8.3,
-      "diMinus": 26.89,
+      "diPlus": 7.44,
+      "diMinus": 31.79,
       "atr14": 0.0,
-      "atrPct": 0.91,
+      "atrPct": 0.95,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
       "momentum": -0.0,
       "momentumPrev": -0.0,
-      "momentumExpandiendo": false,
+      "momentumExpandiendo": true,
       "momentumSerie": [
         -0.0,
         -0.0,
@@ -371,11 +371,11 @@
       ],
       "momentumPendiente3": 0.0,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 58,
+      "momentumBarrasTramo": 59,
       "momentumPicoTramo": -0.0,
       "momentumPicoPrevio": -0.0,
       "momentumPicoVsPrevioPct": 614,
-      "momentumBarrasDesdePico": 14,
+      "momentumBarrasDesdePico": 15,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 0.08,
       "rangoBajo": 0.07,
-      "posicionEnRangoPct": 14.13,
+      "posicionEnRangoPct": 7.94,
       "poc": 0.08,
       "valueAreaAlto": 0.08,
       "valueAreaBajo": 0.08,
@@ -412,37 +412,37 @@
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 108,
+          "barrasAtras": 109,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.08,
-          "barrasAtras": 96,
+          "barrasAtras": 97,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 87,
+          "barrasAtras": 88,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.08,
-          "barrasAtras": 80,
+          "barrasAtras": 81,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 74,
+          "barrasAtras": 75,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 3,
+          "barrasAtras": 0,
           "enCurso": true
         }
       ],
@@ -457,7 +457,7 @@
         2.63,
         2.93,
         4.01,
-        10.39
+        10.45
       ],
       "canalLineaBase02": null,
       "canalLineaBase02Rota": null,
