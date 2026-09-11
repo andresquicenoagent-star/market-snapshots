@@ -1,9 +1,9 @@
 {
   "activo": "HBAR-USDT",
-  "generadoUtc": "2026-09-11 03:13:07 UTC",
-  "generadoLocal": "2026-09-11 03:13:07",
+  "generadoUtc": "2026-09-11 03:30:51 UTC",
+  "generadoLocal": "2026-09-11 03:30:51",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 0.07,
+  "precioActual": 0.08,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
