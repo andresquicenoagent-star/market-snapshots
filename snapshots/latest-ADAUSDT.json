@@ -1,9 +1,9 @@
 {
   "activo": "ADA-USDT",
-  "generadoUtc": "2026-09-15 13:32:36 UTC",
-  "generadoLocal": "2026-09-15 13:32:36",
+  "generadoUtc": "2026-09-15 13:54:22 UTC",
+  "generadoLocal": "2026-09-15 13:54:22",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 0.21,
+  "precioActual": 0.2,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
