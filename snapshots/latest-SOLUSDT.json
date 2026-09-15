@@ -1,9 +1,9 @@
 {
   "activo": "SOL-USDT",
-  "generadoUtc": "2026-09-15 06:22:32 UTC",
-  "generadoLocal": "2026-09-15 06:22:32",
+  "generadoUtc": "2026-09-15 06:46:59 UTC",
+  "generadoLocal": "2026-09-15 06:46:59",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 101.24,
+  "precioActual": 101.02,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
