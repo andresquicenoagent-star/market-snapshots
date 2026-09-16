@@ -1,7 +1,7 @@
 {
   "activo": "HBAR-USDT",
-  "generadoUtc": "2026-09-16 20:53:51 UTC",
-  "generadoLocal": "2026-09-16 20:53:51",
+  "generadoUtc": "2026-09-16 21:13:15 UTC",
+  "generadoLocal": "2026-09-16 21:13:15",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 0.07,
   "timeframes": {
@@ -321,23 +321,23 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.07,
-      "fechaUltimoCierre": "2026-09-16 19:00 UTC",
+      "fechaUltimoCierre": "2026-09-16 20:00 UTC",
       "ema10": 0.07,
       "ema21": 0.07,
       "ema55": 0.08,
       "ema10SobreEma55": false,
       "ema55Pendiente5": -0.0,
-      "precioVsEma55Pct": -2.03,
-      "emaSeparacionPct": 2.48,
-      "emaSeparacionPctHace5": 2.2,
-      "emaEstrechandose": false,
-      "adx": 33.05,
-      "adxHace5": 29.11,
+      "precioVsEma55Pct": -1.77,
+      "emaSeparacionPct": 2.3,
+      "emaSeparacionPctHace5": 2.49,
+      "emaEstrechandose": true,
+      "adx": 31.82,
+      "adxHace5": 30.86,
       "adxSubiendo": true,
-      "diPlus": 12.44,
-      "diMinus": 22.98,
+      "diPlus": 15.65,
+      "diMinus": 21.55,
       "atr14": 0.0,
-      "atrPct": 1.23,
+      "atrPct": 1.21,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
       "momentum": -0.0,
@@ -371,11 +371,11 @@
       ],
       "momentumPendiente3": 0.0,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 38,
+      "momentumBarrasTramo": 39,
       "momentumPicoTramo": -0.0,
       "momentumPicoPrevio": -0.0,
       "momentumPicoVsPrevioPct": 291,
-      "momentumBarrasDesdePico": 14,
+      "momentumBarrasDesdePico": 15,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 0.08,
       "rangoBajo": 0.07,
-      "posicionEnRangoPct": 20.13,
+      "posicionEnRangoPct": 22.01,
       "poc": 0.07,
       "valueAreaAlto": 0.08,
       "valueAreaBajo": 0.07,
@@ -412,37 +412,37 @@
         {
           "tipo": "H",
           "precio": 0.08,
+          "barrasAtras": 71,
+          "enCurso": false
+        },
+        {
+          "tipo": "L",
+          "precio": 0.07,
           "barrasAtras": 70,
           "enCurso": false
         },
         {
+          "tipo": "H",
+          "precio": 0.08,
+          "barrasAtras": 48,
+          "enCurso": false
+        },
+        {
           "tipo": "L",
-          "precio": 0.07,
-          "barrasAtras": 69,
+          "precio": 0.08,
+          "barrasAtras": 36,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 47,
-          "enCurso": false
-        },
-        {
-          "tipo": "L",
-          "precio": 0.08,
-          "barrasAtras": 35,
-          "enCurso": false
-        },
-        {
-          "tipo": "H",
-          "precio": 0.08,
-          "barrasAtras": 30,
+          "barrasAtras": 31,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 4,
+          "barrasAtras": 5,
           "enCurso": true
         }
       ],
