@@ -1,9 +1,9 @@
 {
   "activo": "BTC-USDT",
-  "generadoUtc": "2026-09-16 21:13:12 UTC",
-  "generadoLocal": "2026-09-16 21:13:12",
+  "generadoUtc": "2026-09-16 21:30:01 UTC",
+  "generadoLocal": "2026-09-16 21:30:01",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 76097.0,
+  "precioActual": 76066.3,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
