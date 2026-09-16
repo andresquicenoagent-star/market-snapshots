@@ -1,9 +1,9 @@
 {
   "activo": "ETH-USDT",
-  "generadoUtc": "2026-09-16 10:54:15 UTC",
-  "generadoLocal": "2026-09-16 10:54:15",
+  "generadoUtc": "2026-09-16 11:13:12 UTC",
+  "generadoLocal": "2026-09-16 11:13:12",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 2404.65,
+  "precioActual": 2406.25,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -320,31 +320,30 @@
     "1h": {
       "timeframe": "1h",
       "velasCerradas": 299,
-      "ultimoCierre": 2405.84,
-      "fechaUltimoCierre": "2026-09-16 09:00 UTC",
-      "ema10": 2404.79,
-      "ema21": 2417.46,
-      "ema55": 2452.81,
+      "ultimoCierre": 2406.48,
+      "fechaUltimoCierre": "2026-09-16 10:00 UTC",
+      "ema10": 2405.1,
+      "ema21": 2416.46,
+      "ema55": 2451.15,
       "ema10SobreEma55": false,
-      "ema55Pendiente5": -9.7,
-      "precioVsEma55Pct": -1.91,
-      "emaSeparacionPct": 1.96,
-      "emaSeparacionPctHace5": 2.29,
+      "ema55Pendiente5": -9.39,
+      "precioVsEma55Pct": -1.82,
+      "emaSeparacionPct": 1.88,
+      "emaSeparacionPctHace5": 2.2,
       "emaEstrechandose": true,
-      "adx": 38.82,
-      "adxHace5": 35.99,
+      "adx": 39.25,
+      "adxHace5": 36.74,
       "adxSubiendo": true,
-      "diPlus": 11.03,
-      "diMinus": 28.55,
-      "atr14": 19.89,
-      "atrPct": 0.83,
+      "diPlus": 10.67,
+      "diMinus": 27.94,
+      "atr14": 19.1,
+      "atrPct": 0.79,
       "squeezeComprimido": true,
-      "squeezeBarrasComprimido": 2,
-      "momentum": -4.61,
-      "momentumPrev": -9.78,
+      "squeezeBarrasComprimido": 3,
+      "momentum": -2.9,
+      "momentumPrev": -4.61,
       "momentumExpandiendo": false,
       "momentumSerie": [
-        -61.45,
         -65.86,
         -66.75,
         -69.12,
@@ -367,15 +366,16 @@
         -18.57,
         -14.91,
         -9.78,
-        -4.61
+        -4.61,
+        -2.9
       ],
-      "momentumPendiente3": 13.96,
+      "momentumPendiente3": 12.02,
       "momentumSignoTramo": -1,
-      "momentumBarrasTramo": 33,
+      "momentumBarrasTramo": 34,
       "momentumPicoTramo": -77.51,
       "momentumPicoPrevio": -0.0,
       "momentumPicoVsPrevioPct": 3444722,
-      "momentumBarrasDesdePico": 18,
+      "momentumBarrasDesdePico": 19,
       "momentumGirando": true,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 2615.0,
       "rangoBajo": 2358.1,
-      "posicionEnRangoPct": 18.58,
+      "posicionEnRangoPct": 18.83,
       "poc": 2515.12,
       "valueAreaAlto": 2548.59,
       "valueAreaBajo": 2409.58,
@@ -394,10 +394,10 @@
         2411.59
       ],
       "swingLows": [
-        2358.1,
         2381.65,
         2388.76,
-        2393.37
+        2393.37,
+        2382.53
       ],
       "areaNoOperableCond1TechoTocado": true,
       "areaNoOperableCond2LomoIgualOMayor": false,
@@ -407,42 +407,42 @@
       "falloEnMaximoAnterior": false,
       "falloEnMaximoDistanciaAtr": 0.01,
       "zigzagUmbralAtr": 3.0,
-      "zigzagUmbralPrecio": 59.66,
+      "zigzagUmbralPrecio": 57.3,
       "zigzagPivotes": [
         {
           "tipo": "H",
           "precio": 2667.0,
-          "barrasAtras": 115,
+          "barrasAtras": 116,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 2461.54,
-          "barrasAtras": 68,
+          "barrasAtras": 69,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 2516.7,
-          "barrasAtras": 60,
+          "barrasAtras": 61,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 2464.52,
-          "barrasAtras": 57,
+          "barrasAtras": 58,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 2615.0,
-          "barrasAtras": 37,
+          "barrasAtras": 38,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 2358.1,
-          "barrasAtras": 15,
+          "barrasAtras": 16,
           "enCurso": true
         }
       ],
