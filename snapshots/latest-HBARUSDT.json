@@ -1,7 +1,7 @@
 {
   "activo": "HBAR-USDT",
-  "generadoUtc": "2026-09-17 18:58:09 UTC",
-  "generadoLocal": "2026-09-17 18:58:09",
+  "generadoUtc": "2026-09-17 19:15:58 UTC",
+  "generadoLocal": "2026-09-17 19:15:58",
   "fuente": "OKX (api.okx.com, publico)",
   "precioActual": 0.08,
   "timeframes": {
@@ -321,23 +321,23 @@
       "timeframe": "1h",
       "velasCerradas": 299,
       "ultimoCierre": 0.08,
-      "fechaUltimoCierre": "2026-09-17 17:00 UTC",
+      "fechaUltimoCierre": "2026-09-17 18:00 UTC",
       "ema10": 0.08,
       "ema21": 0.07,
       "ema55": 0.07,
       "ema10SobreEma55": true,
       "ema55Pendiente5": 0.0,
-      "precioVsEma55Pct": 1.08,
-      "emaSeparacionPct": 0.59,
-      "emaSeparacionPctHace5": 0.45,
+      "precioVsEma55Pct": 0.54,
+      "emaSeparacionPct": 0.56,
+      "emaSeparacionPctHace5": 0.36,
       "emaEstrechandose": false,
-      "adx": 21.64,
-      "adxHace5": 16.42,
+      "adx": 21.81,
+      "adxHace5": 16.33,
       "adxSubiendo": true,
-      "diPlus": 23.87,
-      "diMinus": 11.4,
+      "diPlus": 22.82,
+      "diMinus": 13.99,
       "atr14": 0.0,
-      "atrPct": 1.2,
+      "atrPct": 1.17,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
       "momentum": 0.0,
@@ -350,7 +350,7 @@
         -0.0,
         -0.0,
         -0.0,
-        -0.0,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -369,13 +369,13 @@
         0.0,
         0.0
       ],
-      "momentumPendiente3": 0.0,
+      "momentumPendiente3": -0.0,
       "momentumSignoTramo": 1,
-      "momentumBarrasTramo": 17,
+      "momentumBarrasTramo": 18,
       "momentumPicoTramo": 0.0,
       "momentumPicoPrevio": 0.0,
       "momentumPicoVsPrevioPct": 117,
-      "momentumBarrasDesdePico": 1,
+      "momentumBarrasDesdePico": 2,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 0.08,
       "rangoBajo": 0.07,
-      "posicionEnRangoPct": 57.99,
+      "posicionEnRangoPct": 69.83,
       "poc": 0.07,
       "valueAreaAlto": 0.08,
       "valueAreaBajo": 0.07,
@@ -391,7 +391,7 @@
         0.07,
         0.07,
         0.07,
-        0.07
+        0.08
       ],
       "swingLows": [
         0.07,
@@ -405,44 +405,44 @@
       "areaNoOperableCond4PrecedidoLateral": false,
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
-      "falloEnMaximoDistanciaAtr": 0.0,
+      "falloEnMaximoDistanciaAtr": -11.37,
       "zigzagUmbralAtr": 3.0,
       "zigzagUmbralPrecio": 0.0,
       "zigzagPivotes": [
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 91,
+          "barrasAtras": 92,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 69,
+          "barrasAtras": 70,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.08,
-          "barrasAtras": 57,
+          "barrasAtras": 58,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 52,
+          "barrasAtras": 53,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 0.07,
-          "barrasAtras": 26,
+          "barrasAtras": 27,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 0.08,
-          "barrasAtras": 1,
+          "barrasAtras": 2,
           "enCurso": true
         }
       ],
