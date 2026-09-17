@@ -1,9 +1,9 @@
 {
   "activo": "ETH-USDT",
-  "generadoUtc": "2026-09-17 21:52:56 UTC",
-  "generadoLocal": "2026-09-17 21:52:56",
+  "generadoUtc": "2026-09-17 22:12:14 UTC",
+  "generadoLocal": "2026-09-17 22:12:14",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 2448.98,
+  "precioActual": 2446.04,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -320,31 +320,30 @@
     "1h": {
       "timeframe": "1h",
       "velasCerradas": 299,
-      "ultimoCierre": 2453.63,
-      "fechaUltimoCierre": "2026-09-17 20:00 UTC",
-      "ema10": 2454.35,
-      "ema21": 2446.01,
-      "ema55": 2441.41,
+      "ultimoCierre": 2447.46,
+      "fechaUltimoCierre": "2026-09-17 21:00 UTC",
+      "ema10": 2453.1,
+      "ema21": 2446.14,
+      "ema55": 2441.62,
       "ema10SobreEma55": true,
-      "ema55Pendiente5": 3.16,
-      "precioVsEma55Pct": 0.5,
-      "emaSeparacionPct": 0.53,
-      "emaSeparacionPctHace5": 0.55,
+      "ema55Pendiente5": 2.22,
+      "precioVsEma55Pct": 0.24,
+      "emaSeparacionPct": 0.47,
+      "emaSeparacionPctHace5": 0.65,
       "emaEstrechandose": true,
-      "adx": 29.75,
-      "adxHace5": 27.77,
+      "adx": 29.65,
+      "adxHace5": 28.85,
       "adxSubiendo": true,
-      "diPlus": 25.32,
-      "diMinus": 14.14,
-      "atr14": 19.13,
-      "atrPct": 0.78,
+      "diPlus": 24.47,
+      "diMinus": 13.66,
+      "atr14": 18.38,
+      "atrPct": 0.75,
       "squeezeComprimido": true,
-      "squeezeBarrasComprimido": 1,
-      "momentum": 18.63,
-      "momentumPrev": 23.36,
+      "squeezeBarrasComprimido": 2,
+      "momentum": 13.2,
+      "momentumPrev": 18.63,
       "momentumExpandiendo": false,
       "momentumSerie": [
-        5.35,
         3.4,
         6.06,
         8.5,
@@ -367,15 +366,16 @@
         35.15,
         28.99,
         23.36,
-        18.63
+        18.63,
+        13.2
       ],
-      "momentumPendiente3": -16.52,
+      "momentumPendiente3": -15.8,
       "momentumSignoTramo": 1,
-      "momentumBarrasTramo": 34,
+      "momentumBarrasTramo": 35,
       "momentumPicoTramo": 37.43,
       "momentumPicoPrevio": 22.23,
       "momentumPicoVsPrevioPct": 168,
-      "momentumBarrasDesdePico": 11,
+      "momentumBarrasDesdePico": 12,
       "momentumGirando": true,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
@@ -383,7 +383,7 @@
       "rangoLookback": 48,
       "rangoAlto": 2483.83,
       "rangoBajo": 2368.72,
-      "posicionEnRangoPct": 73.76,
+      "posicionEnRangoPct": 68.4,
       "poc": 2401.86,
       "valueAreaAlto": 2522.85,
       "valueAreaBajo": 2383.84,
@@ -394,10 +394,10 @@
         2483.83
       ],
       "swingLows": [
-        2378.23,
         2368.72,
         2388.0,
-        2428.01
+        2428.01,
+        2445.29
       ],
       "areaNoOperableCond1TechoTocado": false,
       "areaNoOperableCond2LomoIgualOMayor": true,
@@ -405,44 +405,44 @@
       "areaNoOperableCond4PrecedidoLateral": false,
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
-      "falloEnMaximoDistanciaAtr": -1.51,
+      "falloEnMaximoDistanciaAtr": -1.57,
       "zigzagUmbralAtr": 3.0,
-      "zigzagUmbralPrecio": 57.39,
+      "zigzagUmbralPrecio": 55.13,
       "zigzagPivotes": [
         {
           "tipo": "L",
           "precio": 2464.52,
-          "barrasAtras": 92,
+          "barrasAtras": 93,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 2615.0,
-          "barrasAtras": 72,
+          "barrasAtras": 73,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 2358.1,
-          "barrasAtras": 50,
+          "barrasAtras": 51,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 2430.07,
-          "barrasAtras": 33,
+          "barrasAtras": 34,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 2368.72,
-          "barrasAtras": 26,
+          "barrasAtras": 27,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 2483.83,
-          "barrasAtras": 6,
+          "barrasAtras": 7,
           "enCurso": true
         }
       ],
