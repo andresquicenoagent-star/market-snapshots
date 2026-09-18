@@ -1,9 +1,9 @@
 {
   "activo": "BTC-USDT",
-  "generadoUtc": "2026-09-18 14:45:42 UTC",
-  "generadoLocal": "2026-09-18 14:45:42",
+  "generadoUtc": "2026-09-18 15:12:20 UTC",
+  "generadoLocal": "2026-09-18 15:12:20",
   "fuente": "OKX (api.okx.com, publico)",
-  "precioActual": 80760.0,
+  "precioActual": 80650.6,
   "timeframes": {
     "Diario": {
       "timeframe": "Diario",
@@ -320,31 +320,30 @@
     "1h": {
       "timeframe": "1h",
       "velasCerradas": 299,
-      "ultimoCierre": 80075.9,
-      "fechaUltimoCierre": "2026-09-18 13:00 UTC",
-      "ema10": 78231.34,
-      "ema21": 77649.19,
-      "ema55": 77043.64,
+      "ultimoCierre": 80946.8,
+      "fechaUltimoCierre": "2026-09-18 14:00 UTC",
+      "ema10": 78725.06,
+      "ema21": 77948.98,
+      "ema55": 77183.04,
       "ema10SobreEma55": true,
-      "ema55Pendiente5": 303.28,
-      "precioVsEma55Pct": 3.94,
-      "emaSeparacionPct": 1.54,
-      "emaSeparacionPctHace5": 0.9,
+      "ema55Pendiente5": 389.97,
+      "precioVsEma55Pct": 4.88,
+      "emaSeparacionPct": 2.0,
+      "emaSeparacionPctHace5": 1.02,
       "emaEstrechandose": false,
-      "adx": 34.5,
-      "adxHace5": 22.06,
+      "adx": 37.87,
+      "adxHace5": 24.57,
       "adxSubiendo": true,
-      "diPlus": 52.9,
-      "diMinus": 6.01,
-      "atr14": 519.5,
-      "atrPct": 0.65,
+      "diPlus": 52.69,
+      "diMinus": 5.29,
+      "atr14": 547.57,
+      "atrPct": 0.68,
       "squeezeComprimido": false,
       "squeezeBarrasComprimido": 0,
-      "momentum": 1374.36,
-      "momentumPrev": 1077.62,
+      "momentum": 1751.29,
+      "momentumPrev": 1374.36,
       "momentumExpandiendo": true,
       "momentumSerie": [
-        491.65,
         477.95,
         465.45,
         410.55,
@@ -367,26 +366,27 @@
         964.29,
         1029.98,
         1077.62,
-        1374.36
+        1374.36,
+        1751.29
       ],
-      "momentumPendiente3": 410.07,
+      "momentumPendiente3": 721.31,
       "momentumSignoTramo": 1,
-      "momentumBarrasTramo": 11,
-      "momentumPicoTramo": 1374.36,
+      "momentumBarrasTramo": 12,
+      "momentumPicoTramo": 1751.29,
       "momentumPicoPrevio": 606.86,
-      "momentumPicoVsPrevioPct": 226,
+      "momentumPicoVsPrevioPct": 289,
       "momentumBarrasDesdePico": 0,
       "momentumGirando": false,
       "divergenciaBajista": false,
       "divergenciaAlcista": false,
       "crucesEma55Ultimas20": 2,
       "rangoLookback": 48,
-      "rangoAlto": 80515.8,
+      "rangoAlto": 80982.5,
       "rangoBajo": 75055.0,
-      "posicionEnRangoPct": 91.94,
-      "poc": 77225.96,
-      "valueAreaAlto": 77920.99,
-      "valueAreaBajo": 75696.87,
+      "posicionEnRangoPct": 99.4,
+      "poc": 77215.62,
+      "valueAreaAlto": 77868.55,
+      "valueAreaBajo": 75658.65,
       "swingHighs": [
         76770.0,
         77167.3,
@@ -405,43 +405,43 @@
       "areaNoOperableCond4PrecedidoLateral": false,
       "areaNoOperable": false,
       "falloEnMaximoAnterior": false,
-      "falloEnMaximoDistanciaAtr": -2.89,
+      "falloEnMaximoDistanciaAtr": -2.74,
       "zigzagUmbralAtr": 3.0,
-      "zigzagUmbralPrecio": 1558.51,
+      "zigzagUmbralPrecio": 1642.7,
       "zigzagPivotes": [
         {
           "tipo": "L",
           "precio": 76394.9,
-          "barrasAtras": 109,
+          "barrasAtras": 110,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 79600.0,
-          "barrasAtras": 89,
+          "barrasAtras": 90,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 75603.0,
-          "barrasAtras": 71,
+          "barrasAtras": 72,
           "enCurso": false
         },
         {
           "tipo": "H",
           "precio": 77348.9,
-          "barrasAtras": 68,
+          "barrasAtras": 69,
           "enCurso": false
         },
         {
           "tipo": "L",
           "precio": 74955.5,
-          "barrasAtras": 67,
+          "barrasAtras": 68,
           "enCurso": false
         },
         {
           "tipo": "H",
-          "precio": 80515.8,
+          "precio": 80982.5,
           "barrasAtras": 0,
           "enCurso": true
         }
@@ -457,7 +457,7 @@
         5.23,
         2.29,
         3.13,
-        7.28
+        7.89
       ],
       "canalLineaBase02": null,
       "canalLineaBase02Rota": null,
@@ -465,11 +465,11 @@
       "correccionRetrocesoBPct": 137.09,
       "fiboUltimoTramo": {
         "desde": 74955.5,
-        "hasta": 80515.8,
-        "r382": 78391.77,
-        "r50": 77735.65,
-        "r618": 77079.53,
-        "r786": 76145.4
+        "hasta": 80982.5,
+        "r382": 78680.19,
+        "r50": 77969.0,
+        "r618": 77257.81,
+        "r786": 76245.28
       },
       "velaVivaAbierta": true
     }
